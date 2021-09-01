@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="static/reset.css" />
+    <link rel="stylesheet" href="static/style.css" />
+    <link rel="stylesheet" href="static/carousel.css" />
+    <link rel="stylesheet" href="static/forms.css" />
+    <link rel="stylesheet" href="static/layouts.css" />
+    <link rel="stylesheet" href="static/lists.css" />
+    <link rel="stylesheet" href="static/table.css" />
+    <link rel="stylesheet" href="static/typography.css" />
+    <link rel="stylesheet" href="static/calendar.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <title>카카오톡</title>
+  </head>
+
+  <body>
+    <div class="schedule-container">
+      <div class="close">
+        <span class="material-icons-outlined"> remove </span>
+        <span class="material-icons-outlined"> check_box_outline_blank </span>
+        <span class="material-icons-outlined"> clear </span>
+      </div>
+      <div class="schedule-top">
+        <div class="schedule-top_close">
+          <span class="material-icons-outlined"> clear </span>
+        </div>
+        <div class="schedule-top_color">
+          <span class="material-icons-outlined"> arrow_drop_down </span>
+        </div>
+        <div class="schedule-top_name">
+          <input
+            type="text"
+            name="schedule-input-name"
+            id="schedule-input-name"
+            placeholder="일정 제목"
+          />
+        </div>
+      </div>
+      <div class="contents-line"><hr /></div>
+      <div class="schedule-middle-container">
+        <div class="schedule-middle">
+          <div class="schedule-date title-content">
+            <div class="schedule-title">일시</div>
+            <div class="schedule-content">
+              <input type="date" name="" id="" />
+              <input
+                type="time"
+                id="appt"
+                name="appt"
+                min="09:00"
+                max="18:00"
+                required
+              />
+              <input type="date" name="" id="" />
+              <input
+                type="time"
+                id="appt"
+                name="appt"
+                min="09:00"
+                max="18:00"
+                required
+              />
+              <div></div>
+              <input
+                type="radio"
+                name="schedule-input-when"
+                id="allday"
+                value="allday"
+              />
+              <label for="allday">하루 종일</label>
+              <input
+                type="radio"
+                name="schedule-input-when"
+                id="lunar"
+                value="lunar"
+              />
+              <label for="lunar">음력</label>
+              <button class="btn-none">시간대 입력</button>
+            </div>
+          </div>
+          <div class="schedule-calendar title-content">
+            <div class="schedule-title">캘린더</div>
+            <div class="schedule-content">
+              <select name="calendar" id="">
+                <option value="">내 캘린더</option>
+              </select>
+            </div>
+          </div>
+          <div class="schedule-place title-content">
+            <div class="schedule-title">장소</div>
+            <div class="schedule-content">
+              <input
+                type="text"
+                name=""
+                id="schedule-input-place"
+                placeholder="장소 입력"
+              />
+            </div>
+          </div>
+          <div class="schedule-repeat title-content">
+            <div class="schedule-title">반복</div>
+            <div class="schedule-content">
+              <select name="" id="">
+                <option value="">반복 안 함</option>
+                <option value="">매일</option>
+                <option value="">매주</option>
+                <option value="">매월</option>
+                <option value="">매년</option>
+                <option value="">사용 안함</option>
+              </select>
+            </div>
+          </div>
+          <div class="schedule-alarm title-content">
+            <div class="schedule-title">알림</div>
+            <div class="schedule-content">
+              <select name="" id="">
+                <option value="">일정 시작 시간</option>
+                <option value="">5분 전</option>
+                <option value="">15분 전</option>
+                <option value="">30분 전</option>
+                <option value="">1시간</option>
+                <option value="">1일</option>
+                <option value="">2일</option>
+                <option value="">1주</option>
+                <option value="">사용자 설정</option>
+              </select>
+              <button class="btn-none">알림 삭제</button>
+              <div></div>
+              <button class="add-alarm">알림 추가</button>
+            </div>
+          </div>
+          <div class="schedule-description title-content">
+            <div class="schedule-title">설명</div>
+            <div class="schedule-content">
+              <input
+                type="text"
+                name=""
+                id="schedule-input-description"
+                placeholder="설명 추가"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="schedule-middle">
+          <button id="schedule-invite-button">참석자 초대</button>
+        </div>
+      </div>
+      <div class="contents-line"><hr /></div>
+      <div class="schedule-bottom">
+        <button>저장</button>
+      </div>
+    </div>
+  </body>
+  <script src="src/index.js"></script>
+</html>

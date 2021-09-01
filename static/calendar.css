@@ -1,0 +1,54 @@
+.schedule-top_color {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgb(44, 136, 222);
+}
+#schedule-input-name {
+  width: 100%;
+  border: none;
+}
+.btn-none {
+  border: none;
+  background-color: transparent;
+}
+.schedule-middle-container {
+  display: flex;
+}
+.schedule-top {
+  clear: both;
+  display: flex;
+}
+.title-content {
+  display: flex;
+  padding: 5px 0px;
+  width: 600px;
+  background-color: thistle;
+}
+.schedule-title {
+  width: 50px;
+  height: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+input {
+  height: 30px;
+  padding: 0px;
+  border: none;
+}
+/*
+input[type="date"] {
+  height: 30px
+}
+*/
+.schedule-content select {
+  height: 30px;
+  border: none;
+}
+#schedule-input-description {
+  height: 60px;
+}
+#schedule-invite-button {
+  width: 150px;
+  height: 30px;
+}

@@ -1,0 +1,12 @@
+.dialogue {
+  min-height: 200px;
+}
+.my-chatting {
+  height: 100px;
+}
+.my-chatting_send {
+  float: right;
+}
+.my-chatting_other {
+  clear: both;
+}
