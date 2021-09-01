@@ -16,6 +16,10 @@ nav {
 .close {
   float: right;
 }
+.close span {
+  font-size: 13px;
+  padding: 3px;
+}
 .contents .searchbox {
   clear: both;
   display: flex;

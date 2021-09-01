@@ -18,7 +18,9 @@ nav {
   background-color: antiquewhite;
 }
 .contents-line {
-  background-color: grey;
+  background-color: rgb(224, 224, 224);
+  height: 0.1px;
+  border: none;
 }
 footer {
   background-color: burlywood;
